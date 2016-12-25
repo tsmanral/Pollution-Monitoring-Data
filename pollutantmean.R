@@ -1,6 +1,5 @@
 setwd("~/Desktop/Online Coursera/Coursera-R-Programming/week2/")
-#getwd()
-#list.files()
+
 
 pollutantmean <- function(directory, pollutant, id = 1:332) {
     ## 'directory' is a character vector of length 1 indicating
@@ -26,10 +25,10 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
 			   }
 		else if((a>0)&&(a<10)) {
 			id1<-paste(directory,"/0",i,".csv",sep="")
-				}
+					}
 		else {
 			id1<-paste(directory,"/",i,".csv",sep="")
-			}
+		     }
 			data<-read.csv(id1)
 			mea<-data[,pollutant]
 			m<-c(m,mea)
