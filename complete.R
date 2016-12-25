@@ -14,8 +14,7 @@ complete <- function(directory, id = 1:332) {
     ## where 'id' is the monitor ID number and 'nobs' is the
     ## number of complete cases
 	m<-c()
-	as.numeric(m);
-	removeNA=TRUE
+	as.numeric(m)
 	for(i in id) {
 		a<-i%/%10
 		if(a==0) {
